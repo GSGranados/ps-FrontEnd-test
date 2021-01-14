@@ -4,7 +4,13 @@
   "description": "Paradise Solutions Front End skills test",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devserver": "live-server",
+    "watch:sass": "node-sass scss/main.scss css/style.css -w",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass scss/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css  -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "repository": {
     "type": "git",
@@ -29,5 +35,9 @@
   "bugs": {
     "url": "https://github.com/GSGranados/ps-FrontEnd-test/issues"
   },
-  "homepage": "https://github.com/GSGranados/ps-FrontEnd-test#readme"
+  "homepage": "https://github.com/GSGranados/ps-FrontEnd-test#readme",
+  "dependencies": {
+    "core-js": "^3.8.2",
+    "regenerator-runtime": "^0.13.7"
+  }
 }

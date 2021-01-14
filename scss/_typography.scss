@@ -1,0 +1,31 @@
+.heading-secondary {
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: $heading-color;
+  padding: 0 1.25rem;
+  border-left: 1rem solid $border-color;
+  z-index: 1;
+  transition: color 0.25s ease;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1.5px;
+    background-color: $border-color;
+    transition: all 0.25s ease;
+    z-index: -1;
+  }
+  &:hover::before {
+    width: 100%;
+    box-shadow: 0 1rem 2rem rgba(#000000, 0.25);
+  }
+  &:hover {
+    color: $color-white;
+  }
+}

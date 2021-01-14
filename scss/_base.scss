@@ -1,0 +1,36 @@
+//File used to set all general styles applied to the BODY and HTML
+
+//variables
+
+$nav-color: #e5e5e5;
+$heading-color: #747474;
+$border-color: #fe692d;
+$color-white: #ffffff;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px to make easier  operations with rem values
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+::selection {
+  color: $color-white;
+  background: $border-color;
+}

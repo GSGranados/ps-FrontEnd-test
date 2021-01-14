@@ -1,0 +1,13 @@
+/*MAIN SCSS file
+Description: this file is used as the main point of compilation for node-sass
+Here every partial scss file is imported with all the styles and compiled to the css file
+*/
+
+@import "about";
+@import "base";
+@import "footer";
+@import "header";
+@import "modal";
+@import "products";
+@import "typography";
+@import "utilities";

@@ -1,0 +1,13 @@
+Main requirements:
+
+-Fully reponsive webpage
+-Product section filled dynamically using the tours.json file
+-Modal window when you click on the 'book it now' button for an specific tour option
+-Compatible with the majority of web browsers
+-Optimized and SEO wise considerations will be evaluated.
+
+Non functional requirements:
+- Adding a logo
+- Animation on the mobile version (making some tweaks and changes).
+- Adding a subtle effect on the navbar.
+

@@ -1,0 +1,18 @@
+.about {
+  padding: 0 3rem;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .paragraph {
+    display: inline-block;
+    text-align: justify;
+    font-size: 1.4rem;
+    &:not(:last-of-type) {
+      margin-right: 3rem;
+    }
+  }
+}

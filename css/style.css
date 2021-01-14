@@ -1,0 +1,165 @@
+/*MAIN SCSS file
+Description: this file is used as the main point of compilation for node-sass
+Here every partial scss file is imported with all the styles and compiled to the css file
+*/
+.about {
+  padding: 0 3rem; }
+  .about__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .about .paragraph {
+    display: inline-block;
+    text-align: justify;
+    font-size: 1.4rem; }
+    .about .paragraph:not(:last-of-type) {
+      margin-right: 3rem; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+::selection {
+  color: #ffffff;
+  background: #fe692d; }
+
+.footer {
+  height: 8.5rem;
+  background-color: #fe692d;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem; }
+  .footer__img {
+    height: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 2rem; }
+  .footer .copyright {
+    margin-top: 0.5rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem; }
+
+.header {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Alegreya Sans", sans-serif; }
+  .header__nav {
+    border-top: 1rem solid #fe692d;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2.5rem;
+    background-color: #e5e5e5; }
+  .header__list {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between; }
+  .header__item {
+    font-size: 1.7rem;
+    font-weight: 800; }
+    .header__item:not(:last-of-type) {
+      margin-right: 2.5rem; }
+  .header__link:link, .header__link:visited {
+    text-decoration: none;
+    color: #959595; }
+  .header__logo {
+    height: 6rem;
+    border-radius: 20px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+  .header__hero {
+    margin-top: 1.25rem;
+    height: calc(100vh - 11.25rem);
+    background-image: url(../img/hero.png);
+    background-size: cover;
+    background-position: top;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 0 5.5rem;
+    line-height: 0.9; }
+  .header__sub-title {
+    font-size: 6.25rem;
+    font-weight: 400; }
+  .header__title {
+    font-size: 11rem;
+    letter-spacing: 0.45rem; }
+
+.heading-secondary {
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #747474;
+  padding: 0 1.25rem;
+  border-left: 1rem solid #fe692d;
+  z-index: 1;
+  transition: color 0.25s ease; }
+  .heading-secondary::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1.5px;
+    background-color: #fe692d;
+    transition: all 0.25s ease;
+    z-index: -1; }
+  .heading-secondary:hover::before {
+    width: 100%;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25); }
+  .heading-secondary:hover {
+    color: #ffffff; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 6rem !important; }
+
+.u-margin-bottom-huge {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-small {
+  margin-top: 2rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
+.u-margin-top-big {
+  margin-top: 6rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 8rem !important; }

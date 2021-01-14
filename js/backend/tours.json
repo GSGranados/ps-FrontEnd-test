@@ -1,0 +1,30 @@
+[
+  {
+    "TourName": "ATV & Zip Lines",
+    "Price": "179.00",
+    "Photo": "tour-photos/tour-1.jpg",
+    "Description": "Now there's an exciting way to combine two of Puerto Vallarta's hottest activities in one great tour!  First, you'll climb aboard your own ATV, and drive through the seldom-seen back streets of Puerto Vallarta to the foothills of the Sierra Madre mountain range, giving you great opportunities for picture taking. Then we're off, motoring through rustic ranches and plantations of mango, corn, and cinnamon.",
+    "schedule": { "from": "9:00 AM", "to": "12:30 AM" }
+  },
+  {
+    "TourName": "Blue Marlin Beach Escape",
+    "Price": "89.00",
+    "Photo": "tour-photos/tour-2.jpg",
+    "Description": "A great excursion for cruise passengers or anyone who is on a limited time frame, but wants to visit one of Puerto Vallarta's finest beaches, as well as have fun at the area's newest attraction!  At Las Animas Adventure Park, you can walk on rope bridges and netting through the treetops, scale rock faces, and fly on zip lines high above the ground, lots of fun!",
+    "schedule": { "from": "8:00 AM", "to": "2:30 PM" }
+  },
+  {
+    "TourName": "Private Day at the Island ",
+    "Price": "235.00",
+    "Photo": "tour-photos/tour-3.jpg",
+    "Description": "Short on time, but want to get in some snorkeling during your day in Puerto Vallarta? We'll head directly for one of the best snorkeling areas in Puerto Vallarta, the Los Arcos Marine Park, or if the water is a bit rough on your day, we'll head for the protected cove of Colomitos instead, so you can have the best experience.",
+    "schedule": { "from": "7:00 AM", "to": "3:00 PM" }
+  },
+  {
+    "TourName": "Amazing Day in Cabo",
+    "Price": "79.00",
+    "Photo": "tour-photos/tour-4.jpg",
+    "Description": "Let’s take a look at the past and present of beautiful Los Cabos. Your adventure begins with an excursion aboard a boat, in which we will visit the famous El Arco (The Arch), Land’s End, a Seal Lion Colony and the popular Lover's Beach. We will also get to explore the marina area and learn about Pirates, Missionaries, Indians and the Colonization period.",
+    "schedule": { "from": "6:00 AM", "to": "4:30 PM" }
+  }
+]

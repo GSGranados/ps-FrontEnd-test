@@ -7,6 +7,7 @@
   font-family: "Alegreya Sans", sans-serif;
 
   &__nav {
+    position: relative;
     border-top: 1rem solid $border-color;
     height: 10rem;
     display: flex;
@@ -17,6 +18,74 @@
     background-color: $nav-color;
     @media only screen and (max-width: $bp-extra-small) {
       padding: 0 1.5rem;
+    }
+  }
+
+  &__nav-menu {
+    display: none;
+    position: relative;
+    height: 0.85rem;
+    width: 6rem;
+    border: none;
+    border-radius: 10px;
+    background-color: $heading-color;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    backface-visibility: hidden;
+    z-index: 200;
+
+    &--active {
+      background-color: $color-white;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 0.85rem;
+      width: 6rem;
+      border-radius: 10px;
+      background-color: $heading-color;
+      transition: all 0.2s ease-in-out;
+      backface-visibility: hidden;
+    }
+    &::before {
+      top: -1.5rem;
+    }
+    &::after {
+      top: 1.5rem;
+    }
+
+    &:hover,
+    &:hover::after,
+    &:hover::before {
+      background-color: $border-color;
+      transform: scale(1.05);
+    }
+
+    @media only screen and (max-width: $bp-tab-portrait) {
+      display: inline-block;
+    }
+  }
+
+  &__background {
+    position: fixed;
+    visibility: hidden;
+    top: 2.5rem;
+    left: 5rem;
+    background-color: darken($border-color, 10);
+    height: 4rem;
+    width: 10rem;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+
+    &--scaled {
+      transform: scale(80);
+      visibility: visible;
+      overflow: hidden;
     }
   }
 
@@ -90,10 +159,16 @@
   }
 
   &__logo {
+    position: relative;
     height: 6rem;
     border-radius: 20px;
     box-shadow: 0 1rem 2rem rgba(#000000, 0.2);
     transition: all 0.2s ease-in-out;
+    z-index: 200;
+
+    &--active {
+      transform: scale(1.2);
+    }
 
     @media only screen and (max-width: $bp-desktop-xs) {
       height: 5rem;

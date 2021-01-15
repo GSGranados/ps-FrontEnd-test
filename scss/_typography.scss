@@ -9,6 +9,14 @@
   z-index: 1;
   transition: color 0.25s ease;
 
+  @media only screen and (max-width: $bp-tab-portrait) {
+    font-size: 2.65rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2.25rem;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -16,7 +24,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 1.5px;
+    width: 0;
     background-color: $border-color;
     transition: all 0.25s ease;
     z-index: -1;

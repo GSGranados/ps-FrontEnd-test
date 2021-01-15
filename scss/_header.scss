@@ -15,6 +15,9 @@
     width: 100%;
     padding: 0 2.5rem;
     background-color: $nav-color;
+    @media only screen and (max-width: $bp-extra-small) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__list {
@@ -22,26 +25,87 @@
     display: flex;
     text-transform: uppercase;
     justify-content: space-between;
+    @media only screen and (max-width: $bp-tab-portrait) {
+      display: none;
+    }
   }
 
   &__item {
+    position: relative;
     font-size: 1.7rem;
     font-weight: 800;
+
+    @media only screen and (max-width: $bp-desktop-xs) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (max-width: $bp-tab) {
+      font-size: 1.4rem;
+    }
+
     &:not(:last-of-type) {
-      margin-right: 2.5rem;
+      margin-right: 0.95rem;
+
+      @media only screen and (max-width: $bp-desktop-xs) {
+        margin-right: 0.65rem;
+      }
+      @media only screen and (max-width: $bp-tab) {
+        margin-right: 0.5rem;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 0%;
+      background-color: $border-color;
+      transition: all 0.3s ease;
+    }
+
+    &:hover::before {
+      height: 100%;
     }
   }
 
   &__link:link,
   &__link:visited {
+    position: relative;
+    display: inline-block;
+    padding: 1.45rem;
     text-decoration: none;
     color: darken(#eeeeee, 35);
+    transition: all 0.3s ease;
+
+    @media only screen and (max-width: $bp-desktop-xs) {
+      padding: 1rem;
+    }
+    @media only screen and (max-width: $bp-tab) {
+      padding: 0.85rem;
+    }
+
+    &:hover {
+      color: $color-white;
+    }
   }
 
   &__logo {
     height: 6rem;
     border-radius: 20px;
-    box-shadow: 0 1rem 2rem rgba(#000000, 0.4);
+    box-shadow: 0 1rem 2rem rgba(#000000, 0.2);
+    transition: all 0.2s ease-in-out;
+
+    @media only screen and (max-width: $bp-desktop-xs) {
+      height: 5rem;
+    }
+    @media only screen and (max-width: $bp-tab) {
+      height: 4.25rem;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 1rem 2rem rgba(#000000, 0.4);
+    }
   }
 
   &__hero {
@@ -58,14 +122,119 @@
     color: $color-white;
     padding: 0 5.5rem;
     line-height: 0.9;
+    transition: all 0.25s ease;
+
+    @media only screen and (max-width: $bp-tab-portrait) {
+      padding: 0 3rem;
+    }
+
+    @media only screen and (max-width: $bp-tiny) {
+      padding: 0 2rem;
+      align-items: center;
+      background-image: linear-gradient(
+          rgba($color-black, 0.45),
+          rgba($color-black, 0.55)
+        ),
+        url(../img/hero.png);
+      background-position: left;
+    }
   }
 
   &__sub-title {
     font-size: 6.25rem;
     font-weight: 400;
+    animation: moveDown 1.5s ease-in-out;
+    animation-fill-mode: backwards;
+    backface-visibility: hidden;
+    @media only screen and (max-width: $bp-desktop-xs) {
+      font-size: 5.5rem;
+    }
+    @media only screen and (max-width: $bp-tab) {
+      font-size: 5rem;
+    }
+    @media only screen and (max-width: $bp-tab-portrait) {
+      font-size: 4.5rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 4rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 3.25rem;
+    }
+    @media only screen and (max-width: $bp-tiny) {
+      font-size: 2.75rem;
+    }
   }
   &__title {
+    position: relative;
     font-size: 11rem;
     letter-spacing: 0.45rem;
+    animation: moveIn 1.5s ease-in-out 1.25s;
+    animation-fill-mode: backwards;
+    backface-visibility: hidden;
+
+    @media only screen and (max-width: $bp-desktop-xs) {
+      font-size: 9.5rem;
+    }
+    @media only screen and (max-width: $bp-tab) {
+      font-size: 8.75rem;
+    }
+    @media only screen and (max-width: $bp-tab-portrait) {
+      font-size: 8.25rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 7.5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 6rem;
+    }
+    @media only screen and (max-width: $bp-tiny) {
+      font-size: 5rem;
+      margin-top: 1.5rem;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 0%;
+      width: 100%;
+      border-bottom: 5px solid $color-white;
+      animation: growBorder 0.75s ease 2.25s;
+      animation-fill-mode: backwards;
+      backface-visibility: hidden;
+    }
+  }
+}
+
+/*Key Frames for the Hero Titles*/
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growBorder {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
   }
 }

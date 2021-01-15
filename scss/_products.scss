@@ -1,0 +1,187 @@
+.section-products {
+  align-self: stretch;
+  padding: 0 2.5rem;
+  font-family: "Alegreya Sans", sans-serif;
+
+  .product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    &__card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+
+      @media only screen and (max-width: $bp-small) {
+        margin-bottom: 3.5rem;
+      }
+
+      &:hover {
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+        transform: scale(1.05);
+
+        .product__cta {
+          background-color: $color-product;
+          color: $color-white;
+        }
+
+        .product__details {
+          background-color: $color-product;
+          color: $color-white;
+        }
+
+        .product__btn:link,
+        .product__btn:visited {
+          background-color: $background-btn;
+          color: $color-red;
+        }
+
+        .product__img {
+          opacity: 0.5;
+        }
+        .product__caption {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__cta {
+      display: flex;
+      justify-content: space-between;
+      color: $color-black;
+      align-items: center;
+      width: 100%;
+      padding: 0.8rem 1rem;
+      transition: all 0.3s ease;
+    }
+
+    &__price {
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+      font-size: 1.7rem;
+
+      .high {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin-left: 0.5rem;
+      }
+    }
+
+    &__deal {
+      text-transform: capitalize;
+      font-size: 1.5rem;
+      font-style: italic;
+
+      .deal-high {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+    }
+    &__btn:link,
+    &__btn:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: $background-btn;
+      font-weight: 800;
+      font-size: 1.6rem;
+      background-color: $color-red;
+      padding: 0.3rem 1.5rem;
+      border: none;
+      border-radius: 0.65rem;
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        background-color: $color-red;
+        transform: scale(1.05);
+        box-shadow: 0 1rem 3rem rgba($color-black, 0.6);
+        color: $background-btn;
+      }
+    }
+
+    &__shape {
+      position: relative;
+      width: 100%;
+      height: 20rem;
+      overflow: hidden;
+      background-color: black;
+    }
+    &__img {
+      transform: translateY(-3rem);
+      width: 100%;
+      transition: all 0.2s ease;
+    }
+
+    &__caption {
+      position: absolute;
+      display: inline-block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $color-white;
+      font-weight: 800;
+      font-size: 3rem;
+      opacity: 0;
+      transition: all 0.2s ease 0.15s;
+      letter-spacing: 0.15rem;
+      border-bottom: 2px solid $color-white;
+    }
+
+    &__details {
+      margin-top: 0.45rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      color: $color-black;
+      text-align: center;
+      padding: 1.75rem 0.5rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &__title {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 2.5rem;
+
+      font-weight: 800;
+    }
+
+    &__date {
+      font-size: 1.65rem;
+    }
+
+    &__hot {
+      text-transform: uppercase;
+      text-align: center;
+      display: inline-block;
+      position: absolute;
+      font-size: 1.1rem;
+      top: 66%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      color: $color-red;
+      font-style: italic;
+      background-color: $background-btn;
+      z-index: 1;
+      padding: 1rem;
+
+      @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        border-radius: none;
+      }
+      .hot-high {
+        font-weight: 700;
+      }
+    }
+  }
+}

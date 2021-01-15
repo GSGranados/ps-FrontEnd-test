@@ -2,10 +2,27 @@
 
 //variables
 
+//Color Variables
 $nav-color: #e5e5e5;
 $heading-color: #747474;
 $border-color: #fe692d;
 $color-white: #ffffff;
+$color-product: #0184b2;
+$color-red: #f01111;
+$background-btn: #f8ce24;
+$color-black: #000000;
+
+//Breakpoints variables
+$bp-desktop-bg: 87.5em;
+$bp-desktop-md: 84.375em;
+$bp-desktop-sm: 81.25em;
+$bp-desktop-xs: 71.875em;
+$bp-tab: 59.375em;
+$bp-tab-portrait: 53.125em;
+$bp-medium: 46.875em;
+$bp-small: 40.625em;
+$bp-extra-small: 37.5em;
+$bp-tiny: 31.25em;
 
 *,
 *::after,
@@ -17,6 +34,15 @@ $color-white: #ffffff;
 
 html {
   font-size: 62.5%; //1rem = 10px to make easier  operations with rem values
+  @media only screen and (max-width: $bp-desktop-bg) {
+    font-size: 60%;
+  }
+  @media only screen and (max-width: $bp-desktop-md) {
+    font-size: 55%;
+  }
+  @media only screen and (max-width: $bp-desktop-sm) {
+    font-size: 50%;
+  }
 }
 
 body {

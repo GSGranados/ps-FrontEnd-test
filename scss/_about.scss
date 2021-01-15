@@ -5,14 +5,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+    }
   }
 
   .paragraph {
     display: inline-block;
+    padding: 0 3rem 0 1rem;
     text-align: justify;
     font-size: 1.4rem;
+
+    @media only screen and (max-width: 37.5em) {
+      margin-bottom: 3.5rem;
+    }
+
     &:not(:last-of-type) {
       margin-right: 3rem;
+      @media only screen and (max-width: 37.5em) {
+        margin-right: 0;
+      }
     }
   }
 }

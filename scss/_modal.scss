@@ -1,0 +1,154 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background-color: rgba($color-black, 0.6);
+  z-index: 1000;
+  animation: appear 0.3s ease-in-out;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  transform: translate(-50%, -50%);
+  background-color: $color-white;
+  z-index: 2000;
+  opacity: 1;
+  animation: appear 0.3s ease-in-out;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__img {
+    height: 100%;
+    filter: sepia(50%);
+  }
+  &__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__close {
+    position: absolute;
+    top: -1rem;
+    right: 2rem;
+    font-size: 5rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: $border-color;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      color: $color-red;
+    }
+  }
+  &__title {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+    background-image: linear-gradient(
+      to right bottom,
+      $border-color,
+      $color-red
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.2s ease-in-out;
+    margin: 1rem 0;
+
+    &:hover {
+      transform: skew(8deg, -2deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 3rem rgba($color-black, 0.4);
+    }
+  }
+
+  &__price {
+    display: inline-block;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.8rem;
+    color: $border-color;
+    padding: 1rem 0;
+  }
+  &__description {
+    font-size: 1.3rem;
+    font-weight: 300;
+    width: 80%;
+    text-align: justify;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__button {
+    border: none;
+    background-color: darken($border-color, 20);
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    color: $color-white;
+    margin: 1rem 0;
+    border-radius: 10px;
+    outline: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.loading-text {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: $border-color;
+  animation: animateLoading 1s infinite ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animateLoading {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

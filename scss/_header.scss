@@ -1,3 +1,4 @@
+//Styles for the Header section
 .header {
   align-self: stretch;
   display: flex;
@@ -6,6 +7,7 @@
   flex-direction: column;
   font-family: "Alegreya Sans", sans-serif;
 
+  //Styles for the Navbar container, Nav Logo and Nav List
   &__nav {
     position: relative;
     border-top: 1rem solid $border-color;
@@ -160,6 +162,8 @@
     }
   }
 
+  //Styles for the Main Image of the website and the titles
+
   &__hero {
     margin-top: 1.25rem;
     height: calc(100vh - 11.25rem);
@@ -260,7 +264,7 @@
   }
 }
 
-/*Key Frames for the Hero Titles*/
+/*Key Frames for the Hero Titles and all the Header Animations*/
 @keyframes moveIn {
   0% {
     opacity: 0;

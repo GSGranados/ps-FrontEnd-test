@@ -1,6 +1,6 @@
 //const values and selectors
-const BASE_URL = "backend/tours.json";
-let toursArray = [];
+const BASE_URL = "backend/tours.json"; //BASE URL used to retrieve the tours object (Array)
+let toursArray = []; // Array used to store all the tours retrieved and not rely on fetching the JSON again.
 
 //selectors
 const products = document.querySelector(".product");
@@ -39,7 +39,7 @@ function generateMarkup(data, index) {
         <span class="product__deal"
           >you save <strong class="deal-high">10%</strong></span
         >
-        <a href="#" class="product__btn">Book it!</a>
+        <a href="#" title="${data.TourName}" class="product__btn">Book it!</a>
       </div>
       <figure class="product__shape">
         <img
@@ -71,7 +71,7 @@ function generateModal(data) {
   return `
       <div class="modal__content">
       <div class="modal__main">
-        <img src="${data.Photo}" alt="modal tour" class="modal__img" />
+        <img src="${data.Photo}" alt="${data.TourName}" class="modal__img" />
         <h2 class="modal__title">${data.TourName}</h2>
         <span class="modal__price">from &#36;${data.Price}</span>
       </div>

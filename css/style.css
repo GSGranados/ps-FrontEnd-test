@@ -287,7 +287,7 @@ body {
       animation-fill-mode: backwards;
       backface-visibility: hidden; }
 
-/*Key Frames for the Hero Titles*/
+/*Key Frames for the Hero Titles and all the Header Animations*/
 @keyframes moveIn {
   0% {
     opacity: 0;
@@ -780,6 +780,8 @@ body {
   .heading-secondary:hover {
     color: #ffffff; }
 
+/*Like bootstrap, some helper classes to apply some margin to the content, 
+just need to be added to the markup*/
 .u-margin-bottom-small {
   margin-bottom: 2rem !important; }
 

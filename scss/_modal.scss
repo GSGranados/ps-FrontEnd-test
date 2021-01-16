@@ -1,3 +1,5 @@
+//Styles for the Modal Component
+
 .overlay {
   position: absolute;
   top: 0;
@@ -271,6 +273,7 @@
   display: none;
 }
 
+//Keyframes for the Modal Animations
 @keyframes appear {
   0% {
     opacity: 0;

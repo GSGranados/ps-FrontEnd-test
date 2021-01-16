@@ -35,10 +35,6 @@
     backface-visibility: hidden;
     z-index: 200;
 
-    &--active {
-      background-color: $color-white;
-    }
-
     &::before,
     &::after {
       content: "";
@@ -67,25 +63,6 @@
 
     @media only screen and (max-width: $bp-tab-portrait) {
       display: inline-block;
-    }
-  }
-
-  &__background {
-    position: fixed;
-    visibility: hidden;
-    top: 2.5rem;
-    left: 5rem;
-    background-color: darken($border-color, 10);
-    height: 4rem;
-    width: 10rem;
-    border-radius: 20px;
-    transition: all 0.3s ease-in-out;
-    z-index: 100;
-
-    &--scaled {
-      transform: scale(80);
-      visibility: visible;
-      overflow: hidden;
     }
   }
 
@@ -202,16 +179,18 @@
     @media only screen and (max-width: $bp-tab-portrait) {
       padding: 0 3rem;
     }
-
-    @media only screen and (max-width: $bp-tiny) {
-      padding: 0 2rem;
-      align-items: center;
+    @media only screen and (max-width: $bp-extra-small) {
       background-image: linear-gradient(
           rgba($color-black, 0.45),
           rgba($color-black, 0.55)
         ),
         url(../img/hero.png);
       background-position: left;
+    }
+
+    @media only screen and (max-width: $bp-tiny) {
+      padding: 0 2rem;
+      align-items: center;
     }
   }
 

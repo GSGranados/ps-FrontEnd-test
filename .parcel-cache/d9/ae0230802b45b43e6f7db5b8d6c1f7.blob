@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Charset-->
+    <meta charset="UTF-8">
+    <!--Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Description-->
+    <meta name="description" content="Looking for a fantastic adventure around the globe? Look no further, we have the best tours in the Nature that you can afford">
+    <!--Keywords-->
+    <meta name="keywords" content="Natours, Tours, Nature, Adventures, Island Tours">
+    <!--IE Compatible-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Author-->
+    <meta name="author" content="Steven Granados">
+
+    <!--Fonts and Styles-->
+    <link rel="preconnect" href="2994b07427d6a2e2b4f871901117219d">
+    <link href="9cddd7c5f9785b684fdde3f3913311c1" rel="stylesheet">
+    <link rel="stylesheet" href="334e458a785b794b4ff44a2530b8722c">
+    <!--Scripts-->
+    <script defer="" src="9c69966aa4a69b573ea7a938de8c87e2"></script>
+    <!--Icons-->
+    <link rel="shortcut icon" type="image/png" href="7d250774e7a27fc00073068a57226673">
+    <title>Natours | Fantastic Tours</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header class="header">
+          <nav class="header__nav">
+            <img src="31d81fc1ecf74138e077502a84cc31de" alt="LOGO" class="header__logo">
+            <button class="header__nav-menu">&nbsp;</button>
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">Home</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Cruise Corner</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Airport Transfers</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Discount Card</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">More Tours</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Resources</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">View Cart</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Contact us</a>
+              </li>
+            </ul>
+            <ul class="mobile__list">
+              <li class="mobile__item">
+                <a href="#" class="mobile__link">Home</a>
+              </li>
+              <li class="mobile__item">
+                <a href="#" class="mobile__link">Cruise Corner</a>
+              </li>
+              <li class="mobile__item">
+                <a href="#" class="mobile__link">Airport Transfers</a>
+              </li>
+              <li class="mobile__item">
+                <a href="#" class="mobile__link">Discount Card</a>
+              </li>
+              <li class="mobile__item">
+                <a href="#" class="mobile__link">More Tours</a>
+              </li>
+              <li class="mobile__item">
+                <a href="#" class="mobile__link">Resources</a>
+              </li>
+              <li class="mobile__item">
+                <a href="#" class="mobile__link">View Cart</a>
+              </li>
+              <li class="mobile__item">
+                <a href="#" class="mobile__link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__hero">
+            <h2 class="header__sub-title">Making Dreams</h2>
+            <h2 class="header__sub-title">Come True in</h2>
+            <h1 class="header__title">Paradise</h1>
+          </div>
+        </header>
+        <section class="about u-margin-bottom-big">
+          <h2 class="heading-secondary u-margin-bottom-small u-margin-top-huge">
+            Our breathtaking history
+          </h2>
+          <div class="about__content">
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+              erat ultrices, convallis turpis eu, ultricies urna. Aliquam
+              elementum ipsum quis venenatis sodales. Aenean pellentesque
+              posuere quam, a fermentum libero efficitur a. Nunc eu dictum nunc,
+              vitae condimentum lorem. Praesent ante augue, porta ut tellus
+              quis, lacinia mollis velit. Nullam maximus nibh et neque interdum,
+              ac tempor mi imperdiet. Vestibulum euismod iaculis justo.
+              Curabitur sed felis nec massa lacinia auctor et sed mi. Donec
+              pretium tempus risus, vitae ultricies mauris vulputate ac.
+            </p>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+              erat ultrices, convallis turpis eu, ultricies urna. Aliquam
+              elementum ipsum quis venenatis sodales. Aenean pellentesque
+              posuere quam, a fermentum libero efficitur a. Nunc eu dictum nunc,
+              vitae condimentum lorem. Praesent ante augue, porta ut tellus
+              quis, lacinia mollis velit. Nullam maximus nibh et neque interdum,
+              ac tempor mi imperdiet. Vestibulum euismod iaculis justo.
+              Curabitur sed felis nec massa lacinia auctor et sed mi. Donec
+              pretium tempus risus, vitae ultricies mauris vulputate ac.
+            </p>
+          </div>
+        </section>
+        <div class="section-products u-margin-bottom-big">
+          <h2 class="heading-secondary u-margin-bottom-medium">
+            Check out our wildly enjoyable adventures
+          </h2>
+          <div class="product" id="product">
+            <!--Markup used to create the card products
+            <div class="product__card product__card--active">
+              <div class="product__cta">
+                <span class="product__price"
+                  >from <strong class="high">$90.00</strong></span
+                >
+                <span class="product__deal"
+                  >you save <strong class="deal-high">10%</strong></span
+                >
+                <a href="#" class="product__btn">Book it!</a>
+              </div>
+              <figure class="product__shape">
+                <img
+                  class="product__img"
+                  src="img/tour-4.jpg"
+                  alt="Tour name 1"
+                />
+                <figcaption class="product__caption">More Info</figcaption>
+              </figure>
+              <p class="product__hot">
+                Hot <br />
+                <strong class="hot-high">deal</strong>
+              </p>
+              <div class="product__details">
+                <p class="product__title">Santa Maria & Chileno Bay</p>
+                <p class="product__date">Daily from 9:00AM to 12:30PM</p>
+              </div>
+            </div>-->
+          </div>
+        </div>
+        <footer class="footer">
+          <img src="31d81fc1ecf74138e077502a84cc31de" alt="LOGO" class="footer__img">
+          <span class="copyright">&copy; Steven Granados | 2021</span>
+        </footer>
+      </div>
+    </main>
+    <div class="modal hidden">
+      <!--Markup used to generate the Modal
+      <div class="modal__content">
+        <div class="modal__main">
+          <img src="img/tour-1.jpg" alt="modal tour" class="modal__img" />
+          <h2 class="modal__title">This is the tours name</h2>
+          <span class="modal__price">from $90.00</span>
+        </div>
+        <div class="modal__details">
+          <button class="modal__close">&times;</button>
+          <h2
+            class="heading-secondary u-margin-bottom-small heading-secondary--modal"
+          >
+            Tour Highlights
+          </h2>
+          <p class="modal__description u-margin-bottom-small">
+            Now there's an exciting way to combine two of Puerto Vallarta's
+            hottest activities in one great tour! First, you'll climb aboard
+            your own ATV, and drive through the seldom-seen back streets of
+            Puerto Vallarta to the foothills of the Sierra Madre mountain range,
+            giving you great opportunities for picture taking. Then we're off,
+            motoring through rustic ranches and plantations of mango, corn, and
+            cinnamon.
+          </p>
+          <form class="modal__form">
+            <div class="modal__form-container">
+              <div class="modal__group">
+                <input
+                  class="modal__input"
+                  type="number"
+                  name="passengers"
+                  id="passengers"
+                  placeholder="passengers"
+                />
+                <label class="modal__label" for="passengers">Passengers</label>
+              </div>
+              <div class="modal__group">
+                <input
+                  class="modal__input"
+                  type="number"
+                  name="days"
+                  id="days"
+                  placeholder="Tour days"
+                />
+                <label class="modal__label" for="days">Tour Days</label>
+              </div>
+            </div>
+            <div class="modal__group">
+              <input class="modal__input" type="date" name="date" id="date" />
+            </div>
+
+            <button class="modal__button">Next Steps &rarr;</button>
+          </form>
+        </div>
+      </div>-->
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

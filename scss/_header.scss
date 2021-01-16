@@ -188,13 +188,13 @@
           rgba($color-black, 0.45),
           rgba($color-black, 0.55)
         ),
-        url(../img/hero.png);
-      background-position: left;
+        url(../img/hero-small.png);
+      background-position: center;
+      align-items: center;
     }
 
     @media only screen and (max-width: $bp-tiny) {
       padding: 0 2rem;
-      align-items: center;
     }
   }
 
